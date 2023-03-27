@@ -11,7 +11,9 @@ const Nav = () => {
         <li>Pitch</li>
         <li>Find Start Ups</li>
         <li>Sign In</li>
-        <li><span>Join</span></li>
+        <li>
+          <span>Join</span>
+        </li>
       </UnList>
     </StyledNav>
   );
@@ -47,23 +49,21 @@ const UnList = styled.ul`
     color: #4c3c81;
     cursor: pointer;
     transition: all 0.5s ease;
-    &:hover{
-        font-weight: 700;
+    &:hover {
+      font-weight: 700;
     }
   }
 
-  span{
-    border: 1px solid #A191D6;
-    border-radius: .3rem;
-    padding: .5rem 1rem;
+  span {
+    border: 1px solid #a191d6;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
     font-weight: 700;
-    &:hover{
-        background-color: #4c3c81;
-        color: white;
+    &:hover {
+      background-color: #4c3c81;
+      color: white;
     }
   }
-
-
 `;
 
 export default Nav;
