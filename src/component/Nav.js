@@ -20,9 +20,9 @@ const Nav = () => {
 const StyledNav = styled.nav`
   display: flex;
   width: 90%;
-  padding: .5rem 0;
+  /* padding: 1rem 0; */
   min-height: 10vh;
-  margin: 0 5rem;
+  margin: 1rem 5rem;
   justify-content: space-between;
   align-items: center;
 `;
@@ -53,8 +53,8 @@ const UnList = styled.ul`
   }
 
   span{
-    border: 1px solid #4c3c81;
-    border-radius: .5rem;
+    border: 1px solid #A191D6;
+    border-radius: .3rem;
     padding: .5rem 1rem;
     font-weight: 700;
     &:hover{

@@ -1,12 +1,14 @@
-import AboutUs from "./Pages/AboutUs";
 import Nav from "./component/Nav";
+import GlobalStyle from "../src/component/GlobalStyle";
+import LandingPage from "./Pages/LandingPage";
 
 function App() {
   return (
-    <>
+    <div>
+      <GlobalStyle />
       <Nav />
-      <AboutUs />
-    </>
+      <LandingPage />
+    </div>
   );
 }
 
