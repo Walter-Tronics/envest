@@ -62,6 +62,8 @@ const Search = styled.form`
   input {
     width: 100%;
     height: 2.5rem;
+    font-size: 1.5rem;
+    padding: 0 .5rem;
   }
 
   button {
