@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import man from "../img/man.jpg";
+import Union from "../img/Union.png";
+import Union2 from "../img/Union2.png";
 
 const SearchSection = () => {
   return (
@@ -26,7 +28,12 @@ const SearchSection = () => {
       </Left>
 
       <Right>
-        <img src={man} alt="Man holding paper" />
+          <img className="dot dot1" src={Union} alt="3 purple dots" />
+          <img className="dot dot2" src={Union2} alt="3 purple dotss" />
+          
+        <Img>
+          <img className="man" src={man} alt="Man holding paper" />
+        </Img>
       </Right>
     </Section>
   );
@@ -36,7 +43,7 @@ const Section = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 4rem;
+  padding: 2rem 5rem;
 `;
 
 const Left = styled.div`
@@ -99,17 +106,43 @@ const Suggest = styled.div`
 `;
 
 const Right = styled.div`
+  position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+
+  img.dot1,
+  img.dot2 {
+    position: absolute;
+    width: 5.2%;
+    z-index: 1;
+  }
+
+  img.dot1{
+    top: 20%;
+    left: 6%;
+  }
+
+  img.dot2{
+    top: 15%;
+    left: -8%;
+  }
+`;
+
+const Img = styled.div`
+  /* position: relative; */
   overflow: hidden;
   height: 70vh;
-  justify-content: center;
   border-top-left-radius: 6rem;
   border-bottom-left-radius: 6rem;
   border-top-right-radius: 6rem;
 
-  img {
+  img.man {
+    height: 70vh;
+    width: 100%;
     object-fit: contain;
-    overflow: hidden;
   }
 `;
 
